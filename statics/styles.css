@@ -12,6 +12,12 @@ body {
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
+  background-image: url('../statics/imagenes/imagen-de-fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
