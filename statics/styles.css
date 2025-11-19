@@ -1,0 +1,170 @@
+/* ==============================
+   RESET Y BASE
+   ============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* ==============================
+   HEADER
+   ============================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+header h2 {
+  color: #2c8a2c;
+}
+
+header .btn {
+  text-decoration: none;
+  background-color: #2c8a2c;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+header .btn:hover {
+  background-color: #238022;
+}
+
+/* ==============================
+   CARD
+   ============================== */
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.card input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2c8a2c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card .btn:hover {
+  background-color: #238022;
+}
+
+/* ==============================
+   RESULTADO
+   ============================== */
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e5f7e5;
+  border-left: 5px solid #2c8a2c;
+  border-radius: 5px;
+}
+
+.result p {
+  margin-bottom: 10px;
+}
+
+/* ==============================
+   BOTÓN PEQUEÑO
+   ============================== */
+.btn.small {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* ==============================
+   ANIMACIONES
+   ============================== */
+
+/* Fade-in para títulos o secciones */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.8s forwards;
+}
+
+/* Rebote para tarjetas de bienvenida */
+.bounce-in {
+  transform: translateY(-20px);
+  opacity: 0;
+  animation: bounceIn 1s forwards;
+}
+
+/* Hover animado para botones grandes */
+.btn.big {
+  background-color: #2c8a2c;
+  color: white;
+  font-size: 18px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn.big:hover {
+  transform: scale(1.05);
+  background-color: #238022;
+}
+
+/* Hover animado para botones pequeños */
+.btn.small {
+  transition: all 0.3s ease;
+}
+
+.btn.small:hover {
+  transform: scale(1.1);
+  background-color: #1f6b1f;
+}
+
+/* ==============================
+   KEYFRAMES
+   ============================== */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes bounceIn {
+  0% { transform: translateY(-50px); opacity: 0; }
+  60% { transform: translateY(10px); opacity: 1; }
+  80% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
