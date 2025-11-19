@@ -26,26 +26,7 @@
 
   </main>
 
-  <script>
-    document.getElementById("buscarRuc").addEventListener("click", () => {
-      const ruc = document.getElementById("rucInput").value.trim();
-      const salida = document.getElementById("resultadoRuc");
-
-      if (!ruc) {
-        salida.innerHTML = "Por favor ingresá un RUC.";
-        return;
-      }
-
-      // Simulación de resultado (porque no hay API oficial)
-      salida.innerHTML = `
-        <h3>Resultado de la consulta</h3>
-        <p><strong>RUC:</strong> ${ruc}</p>
-        <p><strong>Nombre:</strong> Juan Pérez (Ejemplo)</p>
-        <p><strong>Estado:</strong> Activo</p>
-        <small class="muted">*Datos simulados (sin API real)</small>
-      `;
-    });
-  </script>
+  <script src="../js/turuc.js"></script>
 
 </body>
 </html>
